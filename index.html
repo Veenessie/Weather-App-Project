@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Verity's Weather App</title>
   </head>
@@ -18,19 +22,24 @@
       <header>
         <h1>London</h1>
         <h2>Thursday 8 February</h2>
+        <div>
+          <span class="material-symbols-outlined"> schedule</span>
+          <span class="time"> 19:01</span>
+        </div>
       </header>
       <main>
         <section class="current-weather-info">
           <div>Feels like: 24°C</div>
-          <div>Wind Speed: 7mph</div>
+          <div>Wind Speed: 7</div>
           <div>Humidity: 80%</div>
         </section>
 
-        <section class="current-temperature-emoji">⛅</section>
-
-        <section>
-          <div class="current-temperature">17°C</div>
-          <div class="current-temperature-description">Sunny with clouds</div>
+        <section class="current-temperature-info">
+          <div class="current-temperature-emoji">⛅</div>
+          <section class="current-temperature">
+            <div class="current-temperature-value">17°C</div>
+            <div class="current-temperature-description">Sunny with clouds</div>
+          </section>
         </section>
       </main>
       <form>

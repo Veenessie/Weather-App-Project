@@ -20,27 +20,54 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 30px 0px;
+  margin: 0px;
   font-size: 15px;
 }
 
+.material-symbols-outlined {
+  font-size: 15px;
+}
+
+.time {
+  position: relative;
+  bottom: 2px;
+  font-size: 12px;
+}
 main {
   display: flex;
   justify-content: space-between;
+  padding: 0px 25px 0px 0px;
 }
 .current-weather-info {
   margin-bottom: 20px;
   border-right: 1px solid white;
-  padding: 0px 50px 0px 0px;
+  padding: 35px 80px 0px 0px;
 }
 
 .current-temperature-info {
-  margin: 10px 150px 0px 20px;
+  display: flex;
 }
 
 .current-temperature-emoji {
-  font-size: 100px;
+  font-size: 110px;
+  position: relative;
+  bottom: 20px;
+  right: 70px;
 }
+
+.current-temperature {
+  position: relative;
+  top: 25px;
+  right: 30px;
+}
+.current-temperature-value {
+  font-size: 35px;
+  font-weight: bold;
+}
+.current-temperature-description {
+  font-size: 15px;
+}
+
 form {
   padding: 20px 0px 30px 0px;
 }
@@ -51,6 +78,7 @@ form {
   background: white;
   border-radius: 4px;
   font-size: 16px;
+  color: #f28585;
 }
 
 .search-button {
