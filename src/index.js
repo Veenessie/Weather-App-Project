@@ -11,8 +11,7 @@ function refreshWeather(response) {
   );
   let timeElement = document.querySelector("#time");
   let dateElement = document.querySelector("#date");
-
-  console.log(dateElement);
+  let iconElement = document.querySelector("#icon");
 
   let temperature = response.data.temperature.current;
   let feelsLike = Math.round(response.data.temperature.feels_like);
@@ -29,6 +28,7 @@ function refreshWeather(response) {
   windElement.innerHTML = windSpeed;
   humidityElement.innerHTML = humidity;
   descriptionElement.innerHTML = description;
+  iconElement.innerHTML = `<img src=${response.data.condition.icon_url} class="current-temperature-emoji" id="icon" >`;
 }
 
 function formatDate(now) {
