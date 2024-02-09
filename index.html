@@ -22,17 +22,17 @@
     <div class="container">
       <header>
         <h1></h1>
-        <h2>Thursday 8 February</h2>
+        <h2 id="date">Thursday 8 February</h2>
         <div>
           <span class="material-symbols-outlined"> schedule</span>
-          <span class="time"> 19:01</span>
+          <span class="time" id="time"> 19:01</span>
         </div>
       </header>
       <main>
         <section class="current-weather-info">
-          <div>Feels like: 24°C</div>
-          <div>Wind Speed: 7</div>
-          <div>Humidity: 80%</div>
+          <div>Feels like: <span id="feels-like"></span>°C</div>
+          <div>Wind Speed: <span id="wind-speed"></span></div>
+          <div>Humidity: <span id="humidity"></span>%</div>
         </section>
 
         <section class="current-temperature-info">
@@ -45,7 +45,12 @@
               ></span>
               <span class="current-temperature-unit">°C</span>
             </div>
-            <div class="current-temperature-description">Sunny with clouds</div>
+            <div
+              class="current-temperature-description"
+              id="current-temperature-description"
+            >
+              Sunny with clouds
+            </div>
           </section>
         </section>
       </main>
