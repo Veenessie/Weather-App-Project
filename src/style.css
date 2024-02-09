@@ -1,0 +1,68 @@
+body {
+  background: #e8f4ea;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.container {
+  max-width: 575px;
+  background: #ffb5b5;
+  margin: 80px auto;
+  color: white;
+  border-radius: 6px;
+  padding: 20px 30px 30px 40px;
+}
+
+a {
+  color: #f28585;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 30px 0px;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+.current-weather-info {
+  margin-bottom: 20px;
+  border-right: 1px solid white;
+  padding: 0px 50px 0px 0px;
+}
+
+.current-temperature-info {
+  margin: 10px 150px 0px 20px;
+}
+
+.current-temperature-emoji {
+  font-size: 100px;
+}
+form {
+  padding: 20px 0px 30px 0px;
+}
+
+.search-input {
+  padding: 10px 150px 10px 10px;
+  border: none;
+  background: white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  background: #f28585;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+}
+
+footer {
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
