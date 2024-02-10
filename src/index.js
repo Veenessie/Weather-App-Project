@@ -29,6 +29,8 @@ function refreshWeather(response) {
   humidityElement.innerHTML = humidity;
   descriptionElement.innerHTML = description;
   iconElement.innerHTML = `<img src=${response.data.condition.icon_url} class="current-temperature-emoji" id="icon" >`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(now) {
@@ -81,8 +83,8 @@ function formatTime(now) {
 
 function searchCity(city) {
   apiKey = "7b12a4c8c3fba7979089o3b3ff6teab1";
-  apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  axios.get(apiURL).then(refreshWeather);
+  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(refreshWeather);
 }
 
 function displayCity(event) {
@@ -91,7 +93,15 @@ function displayCity(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "7b12a4c8c3fba7979089o3b3ff6teab1";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
   let forecastHtml = "";
 
@@ -118,5 +128,3 @@ let searchFormElement = document.querySelector("form");
 searchFormElement.addEventListener("submit", displayCity);
 
 searchCity("Coventry");
-
-displayForecast();
