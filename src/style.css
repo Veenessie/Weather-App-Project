@@ -66,6 +66,25 @@ main {
   font-size: 15px;
 }
 
+.weather-forecast {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.weather-forecast-day {
+  font-size: 18px;
+}
+
+.forecast-max-temperature {
+  color: #f28585;
+  font-weight: bold;
+}
+
+.forecast-min-temperature {
+  color: #f28585;
+  opacity: 0.8;
+}
+
 form {
   padding: 20px 0px 30px 0px;
 }
