@@ -69,12 +69,22 @@ main {
 .weather-forecast {
   margin-top: 30px;
   margin-bottom: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 .weather-forecast-day {
   font-size: 18px;
+  text-align: center;
 }
 
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.weather-forcast-temperatures {
+  text-align: center;
+}
 .forecast-max-temperature {
   color: #f28585;
   font-weight: bold;
