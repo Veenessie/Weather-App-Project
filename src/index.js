@@ -91,8 +91,32 @@ function displayCity(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+<div class="weather-forecast-day">
+<div class="weather-forecast-date">${day}</div>
+<div class="weather-forecast-icon">🌧️</div>
+<div class="weather-forcast-temperatures">
+<span class="forecast-max-temperature">18º </span>
+<span class="forecast-min-temperature"> 13º</span>
+</div>
+</div>
+`;
+  });
+  let forecastElemenet = document.querySelector("#forecast");
+  forecastElemenet.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("form");
 
 searchFormElement.addEventListener("submit", displayCity);
 
 searchCity("Coventry");
+
+displayForecast();
