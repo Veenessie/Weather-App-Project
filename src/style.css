@@ -78,8 +78,8 @@ main {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 88px;
+  height: 88px;
 }
 
 .weather-forcast-temperatures {
@@ -88,6 +88,7 @@ main {
 .forecast-max-temperature {
   color: #f28585;
   font-weight: bold;
+  margin-right: 8px;
 }
 
 .forecast-min-temperature {
